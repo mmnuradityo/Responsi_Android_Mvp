@@ -8,9 +8,14 @@
     tools:context=".view.activity.MainActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv"
+        android:id="@+id/rvMain"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:clipToPadding="true"
+        android:padding="6dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </android.support.v7.widget.RecyclerView>
+
 </RelativeLayout>

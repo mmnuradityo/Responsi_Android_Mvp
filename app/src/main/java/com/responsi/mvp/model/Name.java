@@ -40,10 +40,6 @@ public class Name{
 	@Override
  	public String toString(){
 		return 
-			"Name{" + 
-			"last = '" + last + '\'' + 
-			",title = '" + title + '\'' + 
-			",first = '" + first + '\'' + 
-			"}";
+			first + " " + title + " " + last;
 		}
 }

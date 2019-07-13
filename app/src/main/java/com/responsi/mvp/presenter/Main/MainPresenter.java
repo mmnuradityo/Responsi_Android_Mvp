@@ -1,4 +1,4 @@
-package com.responsi.mvp.view.activity;
+package com.responsi.mvp.presenter.Main;
 
 public interface MainPresenter {
 
