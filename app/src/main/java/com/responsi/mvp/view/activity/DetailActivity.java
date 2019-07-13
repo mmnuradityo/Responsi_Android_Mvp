@@ -8,7 +8,9 @@ import android.widget.TextView;
 
 import com.responsi.mvp.R;
 
-public class DetailActivity extends AppCompatActivity implements DetailView{
+import static com.responsi.mvp.handler.GlideHandler.setImg;
+
+public class DetailActivity extends AppCompatActivity {
 
     private Intent i;
     private String nama, phone, gbr, email,  gender;
@@ -29,6 +31,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView{
         tvPhone.setText(phone);
         tvEmail.setText(nama);
         tvGender.setText(nama);
+        setImg(this, gbr, img);
     }
 
     private void findView() {
@@ -48,8 +51,4 @@ public class DetailActivity extends AppCompatActivity implements DetailView{
         gender = i.getStringExtra("gender");
     }
 
-    @Override
-    public void setImg(String img) {
-
-    }
 }
